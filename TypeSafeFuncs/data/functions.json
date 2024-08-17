@@ -1,0 +1,4806 @@
+{
+    "CreateTimer": {
+        "args": [
+            "string",
+            "number"
+        ],
+        "return": "number"
+    },
+    "MakePublic": {
+        "args": [
+            "function",
+            "string",
+            "string",
+            "string"
+        ],
+        "return": "nil"
+    },
+    "StartTimer": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "StopTimer": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "RestartTimer": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "nil"
+    },
+    "FreeTimer": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "IsTimerElapsed": {
+        "args": [
+            "number"
+        ],
+        "return": "boolean"
+    },
+    "ReadReceivedActorList": {
+        "args": [],
+        "return": "nil"
+    },
+    "ReadCellActorList": {
+        "args": [
+            "string"
+        ],
+        "return": "nil"
+    },
+    "ClearActorList": {
+        "args": [],
+        "return": "nil"
+    },
+    "SetActorListPid": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "CopyReceivedActorListToStore": {
+        "args": [],
+        "return": "nil"
+    },
+    "GetActorListSize": {
+        "args": [],
+        "return": "number"
+    },
+    "GetActorListAction": {
+        "args": [],
+        "return": "number"
+    },
+    "GetActorCell": {
+        "args": [
+            "number"
+        ],
+        "return": "string"
+    },
+    "GetActorRefId": {
+        "args": [
+            "number"
+        ],
+        "return": "string"
+    },
+    "GetActorRefNum": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetActorMpNum": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetActorPosX": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetActorPosY": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetActorPosZ": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetActorRotX": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetActorRotY": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetActorRotZ": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetActorHealthBase": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetActorHealthCurrent": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetActorHealthModified": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetActorMagickaBase": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetActorMagickaCurrent": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetActorMagickaModified": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetActorFatigueBase": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetActorFatigueCurrent": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetActorFatigueModified": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetActorEquipmentItemRefId": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "string"
+    },
+    "GetActorEquipmentItemCount": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetActorEquipmentItemCharge": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetActorEquipmentItemEnchantmentCharge": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "number"
+    },
+    "DoesActorHavePlayerKiller": {
+        "args": [
+            "number"
+        ],
+        "return": "boolean"
+    },
+    "GetActorKillerPid": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetActorKillerRefId": {
+        "args": [
+            "number"
+        ],
+        "return": "string"
+    },
+    "GetActorKillerRefNum": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetActorKillerMpNum": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetActorKillerName": {
+        "args": [
+            "number"
+        ],
+        "return": "string"
+    },
+    "GetActorDeathState": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetActorSpellsActiveChangesSize": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetActorSpellsActiveChangesAction": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetActorSpellsActiveId": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "string"
+    },
+    "GetActorSpellsActiveDisplayName": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "string"
+    },
+    "GetActorSpellsActiveStackingState": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "boolean"
+    },
+    "GetActorSpellsActiveEffectCount": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetActorSpellsActiveEffectId": {
+        "args": [
+            "number",
+            "number",
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetActorSpellsActiveEffectArg": {
+        "args": [
+            "number",
+            "number",
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetActorSpellsActiveEffectMagnitude": {
+        "args": [
+            "number",
+            "number",
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetActorSpellsActiveEffectDuration": {
+        "args": [
+            "number",
+            "number",
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetActorSpellsActiveEffectTimeLeft": {
+        "args": [
+            "number",
+            "number",
+            "number"
+        ],
+        "return": "number"
+    },
+    "DoesActorSpellsActiveHavePlayerCaster": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "boolean"
+    },
+    "GetActorSpellsActiveCasterPid": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetActorSpellsActiveCasterRefId": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "string"
+    },
+    "GetActorSpellsActiveCasterRefNum": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetActorSpellsActiveCasterMpNum": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "number"
+    },
+    "DoesActorHavePosition": {
+        "args": [
+            "number"
+        ],
+        "return": "boolean"
+    },
+    "DoesActorHaveStatsDynamic": {
+        "args": [
+            "number"
+        ],
+        "return": "boolean"
+    },
+    "SetActorListCell": {
+        "args": [
+            "string"
+        ],
+        "return": "nil"
+    },
+    "SetActorListAction": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetActorCell": {
+        "args": [
+            "string"
+        ],
+        "return": "nil"
+    },
+    "SetActorRefId": {
+        "args": [
+            "string"
+        ],
+        "return": "nil"
+    },
+    "SetActorRefNum": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetActorMpNum": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetActorPosition": {
+        "args": [
+            "number",
+            "number",
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetActorRotation": {
+        "args": [
+            "number",
+            "number",
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetActorHealthBase": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetActorHealthCurrent": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetActorHealthModified": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetActorMagickaBase": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetActorMagickaCurrent": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetActorMagickaModified": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetActorFatigueBase": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetActorFatigueCurrent": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetActorFatigueModified": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetActorDeathState": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetActorDeathInstant": {
+        "args": [
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "SetActorSound": {
+        "args": [
+            "string"
+        ],
+        "return": "nil"
+    },
+    "SetActorSpellsActiveAction": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetActorAIAction": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetActorAITargetToPlayer": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetActorAITargetToObject": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetActorAICoordinates": {
+        "args": [
+            "number",
+            "number",
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetActorAIDistance": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetActorAIDuration": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetActorAIRepetition": {
+        "args": [
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "EquipActorItem": {
+        "args": [
+            "number",
+            "string",
+            "number",
+            "number",
+            "number"
+        ],
+        "return": "nil"
+    },
+    "UnequipActorItem": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "AddActorSpellActive": {
+        "args": [
+            "string",
+            "string",
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "AddActorSpellActiveEffect": {
+        "args": [
+            "number",
+            "number",
+            "number",
+            "number",
+            "number"
+        ],
+        "return": "nil"
+    },
+    "AddActor": {
+        "args": [],
+        "return": "nil"
+    },
+    "SendActorList": {
+        "args": [],
+        "return": "nil"
+    },
+    "SendActorAuthority": {
+        "args": [],
+        "return": "nil"
+    },
+    "SendActorPosition": {
+        "args": [
+            "boolean",
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "SendActorStatsDynamic": {
+        "args": [
+            "boolean",
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "SendActorEquipment": {
+        "args": [
+            "boolean",
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "SendActorSpellsActiveChanges": {
+        "args": [
+            "boolean",
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "SendActorSpeech": {
+        "args": [
+            "boolean",
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "SendActorDeath": {
+        "args": [
+            "boolean",
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "SendActorAI": {
+        "args": [
+            "boolean",
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "SendActorCellChange": {
+        "args": [
+            "boolean",
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "ReadLastActorList": {
+        "args": [],
+        "return": "nil"
+    },
+    "InitializeActorList": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "CopyLastActorListToStore": {
+        "args": [],
+        "return": "nil"
+    },
+    "GetActorRefNumIndex": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetActorKillerRefNumIndex": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "SetActorRefNumIndex": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "ClearBookChanges": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "GetBookChangesSize": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "AddBook": {
+        "args": [
+            "number",
+            "string"
+        ],
+        "return": "nil"
+    },
+    "GetBookId": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "string"
+    },
+    "SendBookChanges": {
+        "args": [
+            "number",
+            "boolean",
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "InitializeBookChanges": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "GetCellStateChangesSize": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetCellStateType": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetCellStateDescription": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "string"
+    },
+    "GetCell": {
+        "args": [
+            "number"
+        ],
+        "return": "string"
+    },
+    "GetExteriorX": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetExteriorY": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "IsInExterior": {
+        "args": [
+            "number"
+        ],
+        "return": "boolean"
+    },
+    "GetRegion": {
+        "args": [
+            "number"
+        ],
+        "return": "string"
+    },
+    "IsChangingRegion": {
+        "args": [
+            "number"
+        ],
+        "return": "boolean"
+    },
+    "SetCell": {
+        "args": [
+            "number",
+            "string"
+        ],
+        "return": "nil"
+    },
+    "SetExteriorCell": {
+        "args": [
+            "number",
+            "number",
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SendCell": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "GetDefaultClass": {
+        "args": [
+            "number"
+        ],
+        "return": "string"
+    },
+    "GetClassName": {
+        "args": [
+            "number"
+        ],
+        "return": "string"
+    },
+    "GetClassDesc": {
+        "args": [
+            "number"
+        ],
+        "return": "string"
+    },
+    "GetClassMajorAttribute": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetClassSpecialization": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetClassMajorSkill": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetClassMinorSkill": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "number"
+    },
+    "IsClassDefault": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "SetDefaultClass": {
+        "args": [
+            "number",
+            "string"
+        ],
+        "return": "nil"
+    },
+    "SetClassName": {
+        "args": [
+            "number",
+            "string"
+        ],
+        "return": "nil"
+    },
+    "SetClassDesc": {
+        "args": [
+            "number",
+            "string"
+        ],
+        "return": "nil"
+    },
+    "SetClassMajorAttribute": {
+        "args": [
+            "number",
+            "number",
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetClassSpecialization": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetClassMajorSkill": {
+        "args": [
+            "number",
+            "number",
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetClassMinorSkill": {
+        "args": [
+            "number",
+            "number",
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SendClass": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SendMessage": {
+        "args": [
+            "number",
+            "string",
+            "boolean",
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "CleanChatForPid": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "CleanChat": {
+        "args": [],
+        "return": "nil"
+    },
+    "ClearTopicChanges": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "GetTopicChangesSize": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "AddTopic": {
+        "args": [
+            "number",
+            "string"
+        ],
+        "return": "nil"
+    },
+    "GetTopicId": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "string"
+    },
+    "SendTopicChanges": {
+        "args": [
+            "number",
+            "boolean",
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "PlayAnimation": {
+        "args": [
+            "number",
+            "string",
+            "number",
+            "number",
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "PlaySpeech": {
+        "args": [
+            "number",
+            "string"
+        ],
+        "return": "nil"
+    },
+    "InitializeTopicChanges": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "ClearFactionChanges": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "GetFactionChangesSize": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetFactionChangesAction": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetFactionId": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "string"
+    },
+    "GetFactionRank": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetFactionExpulsionState": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "boolean"
+    },
+    "GetFactionReputation": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "number"
+    },
+    "SetFactionChangesAction": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetFactionId": {
+        "args": [
+            "string"
+        ],
+        "return": "nil"
+    },
+    "SetFactionRank": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetFactionExpulsionState": {
+        "args": [
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "SetFactionReputation": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "AddFaction": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SendFactionChanges": {
+        "args": [
+            "number",
+            "boolean",
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "InitializeFactionChanges": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "CustomMessageBox": {
+        "args": [
+            "number",
+            "number",
+            "string",
+            "string"
+        ],
+        "return": "nil"
+    },
+    "InputDialog": {
+        "args": [
+            "number",
+            "number",
+            "string",
+            "string"
+        ],
+        "return": "nil"
+    },
+    "PasswordDialog": {
+        "args": [
+            "number",
+            "number",
+            "string",
+            "string"
+        ],
+        "return": "nil"
+    },
+    "ListBox": {
+        "args": [
+            "number",
+            "number",
+            "string",
+            "string"
+        ],
+        "return": "nil"
+    },
+    "ClearQuickKeyChanges": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "GetQuickKeyChangesSize": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetQuickKeySlot": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetQuickKeyType": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetQuickKeyItemId": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "string"
+    },
+    "AddQuickKey": {
+        "args": [
+            "number",
+            "number",
+            "number",
+            "string"
+        ],
+        "return": "nil"
+    },
+    "SendQuickKeyChanges": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetMapVisibility": {
+        "args": [
+            "number",
+            "number",
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetMapVisibilityAll": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "nil"
+    },
+    "InitializeQuickKeyChanges": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "ClearInventoryChanges": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "GetEquipmentSize": {
+        "args": [],
+        "return": "number"
+    },
+    "GetEquipmentChangesSize": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetInventoryChangesSize": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetInventoryChangesAction": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "SetInventoryChangesAction": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "nil"
+    },
+    "EquipItem": {
+        "args": [
+            "number",
+            "number",
+            "string",
+            "number",
+            "number",
+            "number"
+        ],
+        "return": "nil"
+    },
+    "UnequipItem": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "nil"
+    },
+    "AddItemChange": {
+        "args": [
+            "number",
+            "string",
+            "number",
+            "number",
+            "number",
+            "string"
+        ],
+        "return": "nil"
+    },
+    "HasItemEquipped": {
+        "args": [
+            "number",
+            "string"
+        ],
+        "return": "boolean"
+    },
+    "GetEquipmentChangesSlot": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetEquipmentItemRefId": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "string"
+    },
+    "GetEquipmentItemCount": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetEquipmentItemCharge": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetEquipmentItemEnchantmentCharge": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetInventoryItemRefId": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "string"
+    },
+    "GetInventoryItemCount": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetInventoryItemCharge": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetInventoryItemEnchantmentCharge": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetInventoryItemSoul": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "string"
+    },
+    "GetUsedItemRefId": {
+        "args": [
+            "number"
+        ],
+        "return": "string"
+    },
+    "GetUsedItemCount": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetUsedItemCharge": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetUsedItemEnchantmentCharge": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetUsedItemSoul": {
+        "args": [
+            "number"
+        ],
+        "return": "string"
+    },
+    "SendEquipment": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SendInventoryChanges": {
+        "args": [
+            "number",
+            "boolean",
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "SendItemUse": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "InitializeInventoryChanges": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "AddItem": {
+        "args": [
+            "number",
+            "string",
+            "number",
+            "number",
+            "number",
+            "string"
+        ],
+        "return": "nil"
+    },
+    "ClearAlliedPlayersForPlayer": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "GetMiscellaneousChangeType": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetMarkCell": {
+        "args": [
+            "number"
+        ],
+        "return": "string"
+    },
+    "GetMarkPosX": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetMarkPosY": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetMarkPosZ": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetMarkRotX": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetMarkRotZ": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetSelectedSpellId": {
+        "args": [
+            "number"
+        ],
+        "return": "string"
+    },
+    "DoesPlayerHavePlayerKiller": {
+        "args": [
+            "number"
+        ],
+        "return": "boolean"
+    },
+    "GetPlayerKillerPid": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetPlayerKillerRefId": {
+        "args": [
+            "number"
+        ],
+        "return": "string"
+    },
+    "GetPlayerKillerRefNum": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetPlayerKillerMpNum": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetPlayerKillerName": {
+        "args": [
+            "number"
+        ],
+        "return": "string"
+    },
+    "GetDrawState": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetSneakState": {
+        "args": [
+            "number"
+        ],
+        "return": "boolean"
+    },
+    "SetMarkCell": {
+        "args": [
+            "number",
+            "string"
+        ],
+        "return": "nil"
+    },
+    "SetMarkPos": {
+        "args": [
+            "number",
+            "number",
+            "number",
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetMarkRot": {
+        "args": [
+            "number",
+            "number",
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetSelectedSpellId": {
+        "args": [
+            "number",
+            "string"
+        ],
+        "return": "nil"
+    },
+    "AddAlliedPlayerForPlayer": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SendMarkLocation": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SendSelectedSpell": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SendAlliedPlayers": {
+        "args": [
+            "number",
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "Jail": {
+        "args": [
+            "number",
+            "number",
+            "boolean",
+            "boolean",
+            "string",
+            "string"
+        ],
+        "return": "nil"
+    },
+    "Resurrect": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "nil"
+    },
+    "GetDeathReason": {
+        "args": [
+            "number"
+        ],
+        "return": "string"
+    },
+    "GetPlayerKillerRefNumIndex": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GenerateRandomString": {
+        "args": [
+            "number"
+        ],
+        "return": "string"
+    },
+    "GetSHA256Hash": {
+        "args": [
+            "string"
+        ],
+        "return": "string"
+    },
+    "GetLastPlayerId": {
+        "args": [],
+        "return": "number"
+    },
+    "GetCurrentMpNum": {
+        "args": [],
+        "return": "number"
+    },
+    "SetCurrentMpNum": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "GetPosX": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetPosY": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetPosZ": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetPreviousCellPosX": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetPreviousCellPosY": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetPreviousCellPosZ": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetRotX": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetRotZ": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "SetPos": {
+        "args": [
+            "number",
+            "number",
+            "number",
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetRot": {
+        "args": [
+            "number",
+            "number",
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetMomentum": {
+        "args": [
+            "number",
+            "number",
+            "number",
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SendPos": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SendMomentum": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "ClearJournalChanges": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "GetJournalChangesSize": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "AddJournalEntry": {
+        "args": [
+            "number",
+            "string",
+            "number",
+            "string"
+        ],
+        "return": "nil"
+    },
+    "AddJournalEntryWithTimestamp": {
+        "args": [
+            "number",
+            "string",
+            "number",
+            "string",
+            "number",
+            "number",
+            "number"
+        ],
+        "return": "nil"
+    },
+    "AddJournalIndex": {
+        "args": [
+            "number",
+            "string",
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetReputation": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "nil"
+    },
+    "GetJournalItemQuest": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "string"
+    },
+    "GetJournalItemIndex": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetJournalItemType": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetJournalItemActorRefId": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "string"
+    },
+    "GetReputation": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "SendJournalChanges": {
+        "args": [
+            "number",
+            "boolean",
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "SendReputation": {
+        "args": [
+            "number",
+            "boolean",
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "InitializeJournalChanges": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "ClearRecords": {
+        "args": [],
+        "return": "nil"
+    },
+    "GetRecordType": {
+        "args": [],
+        "return": "number"
+    },
+    "GetRecordCount": {
+        "args": [],
+        "return": "number"
+    },
+    "GetRecordEffectCount": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetRecordId": {
+        "args": [
+            "number"
+        ],
+        "return": "string"
+    },
+    "GetRecordBaseId": {
+        "args": [
+            "number"
+        ],
+        "return": "string"
+    },
+    "GetRecordSubtype": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetRecordName": {
+        "args": [
+            "number"
+        ],
+        "return": "string"
+    },
+    "GetRecordModel": {
+        "args": [
+            "number"
+        ],
+        "return": "string"
+    },
+    "GetRecordIcon": {
+        "args": [
+            "number"
+        ],
+        "return": "string"
+    },
+    "GetRecordScript": {
+        "args": [
+            "number"
+        ],
+        "return": "string"
+    },
+    "GetRecordEnchantmentId": {
+        "args": [
+            "number"
+        ],
+        "return": "string"
+    },
+    "GetRecordEnchantmentCharge": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetRecordAutoCalc": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetRecordCharge": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetRecordCost": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetRecordFlags": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetRecordValue": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetRecordWeight": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetRecordQuantity": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetRecordEffectId": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetRecordEffectAttribute": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetRecordEffectSkill": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetRecordEffectRangeType": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetRecordEffectArea": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetRecordEffectDuration": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetRecordEffectMagnitudeMax": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetRecordEffectMagnitudeMin": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "number"
+    },
+    "SetRecordType": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetRecordId": {
+        "args": [
+            "string"
+        ],
+        "return": "nil"
+    },
+    "SetRecordBaseId": {
+        "args": [
+            "string"
+        ],
+        "return": "nil"
+    },
+    "SetRecordInventoryBaseId": {
+        "args": [
+            "string"
+        ],
+        "return": "nil"
+    },
+    "SetRecordSubtype": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetRecordName": {
+        "args": [
+            "string"
+        ],
+        "return": "nil"
+    },
+    "SetRecordModel": {
+        "args": [
+            "string"
+        ],
+        "return": "nil"
+    },
+    "SetRecordIcon": {
+        "args": [
+            "string"
+        ],
+        "return": "nil"
+    },
+    "SetRecordScript": {
+        "args": [
+            "string"
+        ],
+        "return": "nil"
+    },
+    "SetRecordEnchantmentId": {
+        "args": [
+            "string"
+        ],
+        "return": "nil"
+    },
+    "SetRecordEnchantmentCharge": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetRecordAutoCalc": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetRecordCharge": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetRecordCost": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetRecordFlags": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetRecordValue": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetRecordWeight": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetRecordQuality": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetRecordUses": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetRecordTime": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetRecordRadius": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetRecordColor": {
+        "args": [
+            "number",
+            "number",
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetRecordArmorRating": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetRecordHealth": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetRecordDamageChop": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetRecordDamageSlash": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetRecordDamageThrust": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetRecordReach": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetRecordSpeed": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetRecordKeyState": {
+        "args": [
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "SetRecordScrollState": {
+        "args": [
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "SetRecordSkillId": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetRecordText": {
+        "args": [
+            "string"
+        ],
+        "return": "nil"
+    },
+    "SetRecordHair": {
+        "args": [
+            "string"
+        ],
+        "return": "nil"
+    },
+    "SetRecordHead": {
+        "args": [
+            "string"
+        ],
+        "return": "nil"
+    },
+    "SetRecordGender": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetRecordRace": {
+        "args": [
+            "string"
+        ],
+        "return": "nil"
+    },
+    "SetRecordClass": {
+        "args": [
+            "string"
+        ],
+        "return": "nil"
+    },
+    "SetRecordFaction": {
+        "args": [
+            "string"
+        ],
+        "return": "nil"
+    },
+    "SetRecordScale": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetRecordBloodType": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetRecordVampireState": {
+        "args": [
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "SetRecordLevel": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetRecordMagicka": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetRecordFatigue": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetRecordSoulValue": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetRecordAIFight": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetRecordAIFlee": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetRecordAIAlarm": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetRecordAIServices": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetRecordSound": {
+        "args": [
+            "string"
+        ],
+        "return": "nil"
+    },
+    "SetRecordVolume": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetRecordMinRange": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetRecordMaxRange": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetRecordOpenSound": {
+        "args": [
+            "string"
+        ],
+        "return": "nil"
+    },
+    "SetRecordCloseSound": {
+        "args": [
+            "string"
+        ],
+        "return": "nil"
+    },
+    "SetRecordScriptText": {
+        "args": [
+            "string"
+        ],
+        "return": "nil"
+    },
+    "SetRecordIntegerVariable": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetRecordFloatVariable": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetRecordStringVariable": {
+        "args": [
+            "string"
+        ],
+        "return": "nil"
+    },
+    "SetRecordIdByIndex": {
+        "args": [
+            "number",
+            "string"
+        ],
+        "return": "nil"
+    },
+    "SetRecordEnchantmentIdByIndex": {
+        "args": [
+            "number",
+            "string"
+        ],
+        "return": "nil"
+    },
+    "SetRecordEffectId": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetRecordEffectAttribute": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetRecordEffectSkill": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetRecordEffectRangeType": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetRecordEffectArea": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetRecordEffectDuration": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetRecordEffectMagnitudeMax": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetRecordEffectMagnitudeMin": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetRecordBodyPartType": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetRecordBodyPartIdForMale": {
+        "args": [
+            "string"
+        ],
+        "return": "nil"
+    },
+    "SetRecordBodyPartIdForFemale": {
+        "args": [
+            "string"
+        ],
+        "return": "nil"
+    },
+    "SetRecordInventoryItemId": {
+        "args": [
+            "string"
+        ],
+        "return": "nil"
+    },
+    "SetRecordInventoryItemCount": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "AddRecord": {
+        "args": [],
+        "return": "nil"
+    },
+    "AddRecordEffect": {
+        "args": [],
+        "return": "nil"
+    },
+    "AddRecordBodyPart": {
+        "args": [],
+        "return": "nil"
+    },
+    "AddRecordInventoryItem": {
+        "args": [],
+        "return": "nil"
+    },
+    "SendRecordDynamic": {
+        "args": [
+            "number",
+            "boolean",
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "GetScale": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "IsWerewolf": {
+        "args": [
+            "number"
+        ],
+        "return": "boolean"
+    },
+    "GetCreatureRefId": {
+        "args": [
+            "number"
+        ],
+        "return": "string"
+    },
+    "GetCreatureNameDisplayState": {
+        "args": [
+            "number"
+        ],
+        "return": "boolean"
+    },
+    "SetScale": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetWerewolfState": {
+        "args": [
+            "number",
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "SetCreatureRefId": {
+        "args": [
+            "number",
+            "string"
+        ],
+        "return": "nil"
+    },
+    "SetCreatureNameDisplayState": {
+        "args": [
+            "number",
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "SendShapeshift": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "LogMessage": {
+        "args": [
+            "number",
+            "string"
+        ],
+        "return": "nil"
+    },
+    "LogAppend": {
+        "args": [
+            "number",
+            "string"
+        ],
+        "return": "nil"
+    },
+    "StopServer": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "Kick": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "BanAddress": {
+        "args": [
+            "string"
+        ],
+        "return": "nil"
+    },
+    "UnbanAddress": {
+        "args": [
+            "string"
+        ],
+        "return": "nil"
+    },
+    "DoesFilePathExist": {
+        "args": [
+            "string"
+        ],
+        "return": "boolean"
+    },
+    "GetCaseInsensitiveFilename": {
+        "args": [
+            "string",
+            "string"
+        ],
+        "return": "string"
+    },
+    "GetDataPath": {
+        "args": [],
+        "return": "string"
+    },
+    "GetMillisecondsSinceServerStart": {
+        "args": [],
+        "return": "number"
+    },
+    "GetOperatingSystemType": {
+        "args": [],
+        "return": "string"
+    },
+    "GetArchitectureType": {
+        "args": [],
+        "return": "string"
+    },
+    "GetServerVersion": {
+        "args": [],
+        "return": "string"
+    },
+    "GetProtocolVersion": {
+        "args": [],
+        "return": "string"
+    },
+    "GetAvgPing": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetIP": {
+        "args": [
+            "number"
+        ],
+        "return": "string"
+    },
+    "GetMaxPlayers": {
+        "args": [],
+        "return": "number"
+    },
+    "GetPort": {
+        "args": [],
+        "return": "number"
+    },
+    "HasPassword": {
+        "args": [],
+        "return": "boolean"
+    },
+    "GetDataFileEnforcementState": {
+        "args": [],
+        "return": "boolean"
+    },
+    "GetScriptErrorIgnoringState": {
+        "args": [],
+        "return": "boolean"
+    },
+    "SetGameMode": {
+        "args": [
+            "string"
+        ],
+        "return": "nil"
+    },
+    "SetHostname": {
+        "args": [
+            "string"
+        ],
+        "return": "nil"
+    },
+    "SetServerPassword": {
+        "args": [
+            "string"
+        ],
+        "return": "nil"
+    },
+    "SetDataFileEnforcementState": {
+        "args": [
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "SetScriptErrorIgnoringState": {
+        "args": [
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "SetRuleString": {
+        "args": [
+            "string",
+            "string"
+        ],
+        "return": "nil"
+    },
+    "SetRuleValue": {
+        "args": [
+            "string",
+            "number"
+        ],
+        "return": "nil"
+    },
+    "AddDataFileRequirement": {
+        "args": [
+            "string",
+            "number"
+        ],
+        "return": "nil"
+    },
+    "DoesFileExist": {
+        "args": [
+            "string"
+        ],
+        "return": "boolean"
+    },
+    "GetModDir": {
+        "args": [],
+        "return": "string"
+    },
+    "GetPluginEnforcementState": {
+        "args": [],
+        "return": "boolean"
+    },
+    "SetPluginEnforcementState": {
+        "args": [
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "AddPluginHash": {
+        "args": [
+            "string",
+            "string"
+        ],
+        "return": "nil"
+    },
+    "SetDifficulty": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetEnforcedLogLevel": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetPhysicsFramerate": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetConsoleAllowed": {
+        "args": [
+            "number",
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "SetBedRestAllowed": {
+        "args": [
+            "number",
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "SetWildernessRestAllowed": {
+        "args": [
+            "number",
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "SetWaitAllowed": {
+        "args": [
+            "number",
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "SetGameSettingValue": {
+        "args": [
+            "number",
+            "string",
+            "string"
+        ],
+        "return": "nil"
+    },
+    "ClearGameSettingValues": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetVRSettingValue": {
+        "args": [
+            "number",
+            "string",
+            "string"
+        ],
+        "return": "nil"
+    },
+    "ClearVRSettingValues": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SendSettings": {
+        "args": [
+            "number",
+            "boolean",
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "ClearSpellbookChanges": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "ClearSpellsActiveChanges": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "ClearCooldownChanges": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "GetSpellbookChangesSize": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetSpellbookChangesAction": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetSpellsActiveChangesSize": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetSpellsActiveChangesAction": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetCooldownChangesSize": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "SetSpellbookChangesAction": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetSpellsActiveChangesAction": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "nil"
+    },
+    "AddSpell": {
+        "args": [
+            "number",
+            "string"
+        ],
+        "return": "nil"
+    },
+    "AddSpellActive": {
+        "args": [
+            "number",
+            "string",
+            "string",
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "AddSpellActiveEffect": {
+        "args": [
+            "number",
+            "number",
+            "number",
+            "number",
+            "number",
+            "number"
+        ],
+        "return": "nil"
+    },
+    "AddCooldownSpell": {
+        "args": [
+            "number",
+            "string",
+            "number",
+            "number"
+        ],
+        "return": "nil"
+    },
+    "GetSpellId": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "string"
+    },
+    "GetSpellsActiveId": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "string"
+    },
+    "GetSpellsActiveDisplayName": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "string"
+    },
+    "GetSpellsActiveStackingState": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "boolean"
+    },
+    "GetSpellsActiveEffectCount": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetSpellsActiveEffectId": {
+        "args": [
+            "number",
+            "number",
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetSpellsActiveEffectArg": {
+        "args": [
+            "number",
+            "number",
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetSpellsActiveEffectMagnitude": {
+        "args": [
+            "number",
+            "number",
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetSpellsActiveEffectDuration": {
+        "args": [
+            "number",
+            "number",
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetSpellsActiveEffectTimeLeft": {
+        "args": [
+            "number",
+            "number",
+            "number"
+        ],
+        "return": "number"
+    },
+    "DoesSpellsActiveHavePlayerCaster": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "boolean"
+    },
+    "GetSpellsActiveCasterPid": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetSpellsActiveCasterRefId": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "string"
+    },
+    "GetSpellsActiveCasterRefNum": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetSpellsActiveCasterMpNum": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetCooldownSpellId": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "string"
+    },
+    "GetCooldownStartDay": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetCooldownStartHour": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "number"
+    },
+    "SendSpellbookChanges": {
+        "args": [
+            "number",
+            "boolean",
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "SendSpellsActiveChanges": {
+        "args": [
+            "number",
+            "boolean",
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "SendCooldownChanges": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "InitializeSpellbookChanges": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "GetAttributeCount": {
+        "args": [],
+        "return": "number"
+    },
+    "GetSkillCount": {
+        "args": [],
+        "return": "number"
+    },
+    "GetAttributeId": {
+        "args": [
+            "string"
+        ],
+        "return": "number"
+    },
+    "GetSkillId": {
+        "args": [
+            "string"
+        ],
+        "return": "number"
+    },
+    "GetAttributeName": {
+        "args": [
+            "number"
+        ],
+        "return": "string"
+    },
+    "GetSkillName": {
+        "args": [
+            "number"
+        ],
+        "return": "string"
+    },
+    "GetName": {
+        "args": [
+            "number"
+        ],
+        "return": "string"
+    },
+    "GetRace": {
+        "args": [
+            "number"
+        ],
+        "return": "string"
+    },
+    "GetHead": {
+        "args": [
+            "number"
+        ],
+        "return": "string"
+    },
+    "GetHair": {
+        "args": [
+            "number"
+        ],
+        "return": "string"
+    },
+    "GetIsMale": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetModel": {
+        "args": [
+            "number"
+        ],
+        "return": "string"
+    },
+    "GetBirthsign": {
+        "args": [
+            "number"
+        ],
+        "return": "string"
+    },
+    "GetLevel": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetLevelProgress": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetHealthBase": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetHealthCurrent": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetMagickaBase": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetMagickaCurrent": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetFatigueBase": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetFatigueCurrent": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetAttributeBase": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetAttributeModifier": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetAttributeDamage": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetSkillBase": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetSkillModifier": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetSkillDamage": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetSkillProgress": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetSkillIncrease": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetBounty": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "SetName": {
+        "args": [
+            "number",
+            "string"
+        ],
+        "return": "nil"
+    },
+    "SetRace": {
+        "args": [
+            "number",
+            "string"
+        ],
+        "return": "nil"
+    },
+    "SetHead": {
+        "args": [
+            "number",
+            "string"
+        ],
+        "return": "nil"
+    },
+    "SetHair": {
+        "args": [
+            "number",
+            "string"
+        ],
+        "return": "nil"
+    },
+    "SetIsMale": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetModel": {
+        "args": [
+            "number",
+            "string"
+        ],
+        "return": "nil"
+    },
+    "SetBirthsign": {
+        "args": [
+            "number",
+            "string"
+        ],
+        "return": "nil"
+    },
+    "SetResetStats": {
+        "args": [
+            "number",
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "SetLevel": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetLevelProgress": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetHealthBase": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetHealthCurrent": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetMagickaBase": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetMagickaCurrent": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetFatigueBase": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetFatigueCurrent": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetAttributeBase": {
+        "args": [
+            "number",
+            "number",
+            "number"
+        ],
+        "return": "nil"
+    },
+    "ClearAttributeModifier": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetAttributeDamage": {
+        "args": [
+            "number",
+            "number",
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetSkillBase": {
+        "args": [
+            "number",
+            "number",
+            "number"
+        ],
+        "return": "nil"
+    },
+    "ClearSkillModifier": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetSkillDamage": {
+        "args": [
+            "number",
+            "number",
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetSkillProgress": {
+        "args": [
+            "number",
+            "number",
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetSkillIncrease": {
+        "args": [
+            "number",
+            "number",
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetBounty": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetCharGenStage": {
+        "args": [
+            "number",
+            "number",
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SendBaseInfo": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SendStatsDynamic": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SendAttributes": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SendSkills": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SendLevel": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SendBounty": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "ReadReceivedObjectList": {
+        "args": [],
+        "return": "nil"
+    },
+    "ClearObjectList": {
+        "args": [],
+        "return": "nil"
+    },
+    "SetObjectListPid": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "CopyReceivedObjectListToStore": {
+        "args": [],
+        "return": "nil"
+    },
+    "GetObjectListSize": {
+        "args": [],
+        "return": "number"
+    },
+    "GetObjectListOrigin": {
+        "args": [],
+        "return": "number"
+    },
+    "GetObjectListClientScript": {
+        "args": [],
+        "return": "string"
+    },
+    "GetObjectListAction": {
+        "args": [],
+        "return": "number"
+    },
+    "GetObjectListConsoleCommand": {
+        "args": [],
+        "return": "string"
+    },
+    "GetObjectListContainerSubAction": {
+        "args": [],
+        "return": "number"
+    },
+    "IsObjectPlayer": {
+        "args": [
+            "number"
+        ],
+        "return": "boolean"
+    },
+    "GetObjectPid": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetObjectRefId": {
+        "args": [
+            "number"
+        ],
+        "return": "string"
+    },
+    "GetObjectRefNum": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetObjectMpNum": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetObjectCount": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetObjectCharge": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetObjectEnchantmentCharge": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetObjectSoul": {
+        "args": [
+            "number"
+        ],
+        "return": "string"
+    },
+    "GetObjectGoldValue": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetObjectScale": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetObjectSoundId": {
+        "args": [
+            "number"
+        ],
+        "return": "string"
+    },
+    "GetObjectState": {
+        "args": [
+            "number"
+        ],
+        "return": "boolean"
+    },
+    "GetObjectDoorState": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetObjectLockLevel": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetObjectDialogueChoiceType": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetObjectDialogueChoiceTopic": {
+        "args": [
+            "number"
+        ],
+        "return": "string"
+    },
+    "GetObjectGoldPool": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetObjectLastGoldRestockHour": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetObjectLastGoldRestockDay": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "DoesObjectHavePlayerActivating": {
+        "args": [
+            "number"
+        ],
+        "return": "boolean"
+    },
+    "GetObjectActivatingPid": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetObjectActivatingRefId": {
+        "args": [
+            "number"
+        ],
+        "return": "string"
+    },
+    "GetObjectActivatingRefNum": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetObjectActivatingMpNum": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetObjectActivatingName": {
+        "args": [
+            "number"
+        ],
+        "return": "string"
+    },
+    "GetObjectHitSuccess": {
+        "args": [
+            "number"
+        ],
+        "return": "boolean"
+    },
+    "GetObjectHitDamage": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetObjectHitBlock": {
+        "args": [
+            "number"
+        ],
+        "return": "boolean"
+    },
+    "GetObjectHitKnockdown": {
+        "args": [
+            "number"
+        ],
+        "return": "boolean"
+    },
+    "DoesObjectHavePlayerHitting": {
+        "args": [
+            "number"
+        ],
+        "return": "boolean"
+    },
+    "GetObjectHittingPid": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetObjectHittingRefId": {
+        "args": [
+            "number"
+        ],
+        "return": "string"
+    },
+    "GetObjectHittingRefNum": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetObjectHittingMpNum": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetObjectHittingName": {
+        "args": [
+            "number"
+        ],
+        "return": "string"
+    },
+    "GetObjectSummonState": {
+        "args": [
+            "number"
+        ],
+        "return": "boolean"
+    },
+    "GetObjectSummonEffectId": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetObjectSummonSpellId": {
+        "args": [
+            "number"
+        ],
+        "return": "string"
+    },
+    "GetObjectSummonDuration": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "DoesObjectHavePlayerSummoner": {
+        "args": [
+            "number"
+        ],
+        "return": "boolean"
+    },
+    "GetObjectSummonerPid": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetObjectSummonerRefId": {
+        "args": [
+            "number"
+        ],
+        "return": "string"
+    },
+    "GetObjectSummonerRefNum": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetObjectSummonerMpNum": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetObjectPosX": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetObjectPosY": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetObjectPosZ": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetObjectRotX": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetObjectRotY": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetObjectRotZ": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetVideoFilename": {
+        "args": [
+            "number"
+        ],
+        "return": "string"
+    },
+    "GetClientLocalsSize": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetClientLocalInternalIndex": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetClientLocalVariableType": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetClientLocalIntValue": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetClientLocalFloatValue": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetContainerChangesSize": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetContainerItemRefId": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "string"
+    },
+    "GetContainerItemCount": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetContainerItemCharge": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetContainerItemEnchantmentCharge": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetContainerItemSoul": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "string"
+    },
+    "GetContainerItemActionCount": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "number"
+    },
+    "DoesObjectHaveContainer": {
+        "args": [
+            "number"
+        ],
+        "return": "boolean"
+    },
+    "IsObjectDroppedByPlayer": {
+        "args": [
+            "number"
+        ],
+        "return": "boolean"
+    },
+    "SetObjectListCell": {
+        "args": [
+            "string"
+        ],
+        "return": "nil"
+    },
+    "SetObjectListAction": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetObjectListContainerSubAction": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetObjectListConsoleCommand": {
+        "args": [
+            "string"
+        ],
+        "return": "nil"
+    },
+    "SetObjectRefId": {
+        "args": [
+            "string"
+        ],
+        "return": "nil"
+    },
+    "SetObjectRefNum": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetObjectMpNum": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetObjectCount": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetObjectCharge": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetObjectEnchantmentCharge": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetObjectSoul": {
+        "args": [
+            "string"
+        ],
+        "return": "nil"
+    },
+    "SetObjectGoldValue": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetObjectScale": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetObjectState": {
+        "args": [
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "SetObjectLockLevel": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetObjectDialogueChoiceType": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetObjectDialogueChoiceTopic": {
+        "args": [
+            "string"
+        ],
+        "return": "nil"
+    },
+    "SetObjectGoldPool": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetObjectLastGoldRestockHour": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetObjectLastGoldRestockDay": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetObjectDisarmState": {
+        "args": [
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "SetObjectDroppedByPlayerState": {
+        "args": [
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "SetObjectPosition": {
+        "args": [
+            "number",
+            "number",
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetObjectRotation": {
+        "args": [
+            "number",
+            "number",
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetObjectSound": {
+        "args": [
+            "string",
+            "number",
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetObjectSummonState": {
+        "args": [
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "SetObjectSummonEffectId": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetObjectSummonSpellId": {
+        "args": [
+            "string"
+        ],
+        "return": "nil"
+    },
+    "SetObjectSummonDuration": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetObjectSummonerPid": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetObjectSummonerRefNum": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetObjectSummonerMpNum": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetObjectActivatingPid": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetObjectDoorState": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetObjectDoorTeleportState": {
+        "args": [
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "SetObjectDoorDestinationCell": {
+        "args": [
+            "string"
+        ],
+        "return": "nil"
+    },
+    "SetObjectDoorDestinationPosition": {
+        "args": [
+            "number",
+            "number",
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetObjectDoorDestinationRotation": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetPlayerAsObject": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetContainerItemRefId": {
+        "args": [
+            "string"
+        ],
+        "return": "nil"
+    },
+    "SetContainerItemCount": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetContainerItemCharge": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetContainerItemEnchantmentCharge": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetContainerItemSoul": {
+        "args": [
+            "string"
+        ],
+        "return": "nil"
+    },
+    "SetContainerItemActionCountByIndex": {
+        "args": [
+            "number",
+            "number",
+            "number"
+        ],
+        "return": "nil"
+    },
+    "AddObject": {
+        "args": [],
+        "return": "nil"
+    },
+    "AddClientLocalInteger": {
+        "args": [
+            "number",
+            "number",
+            "number"
+        ],
+        "return": "nil"
+    },
+    "AddClientLocalFloat": {
+        "args": [
+            "number",
+            "number"
+        ],
+        "return": "nil"
+    },
+    "AddContainerItem": {
+        "args": [],
+        "return": "nil"
+    },
+    "SendObjectActivate": {
+        "args": [
+            "boolean",
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "SendObjectPlace": {
+        "args": [
+            "boolean",
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "SendObjectSpawn": {
+        "args": [
+            "boolean",
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "SendObjectDelete": {
+        "args": [
+            "boolean",
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "SendObjectLock": {
+        "args": [
+            "boolean",
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "SendObjectDialogueChoice": {
+        "args": [
+            "boolean",
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "SendObjectMiscellaneous": {
+        "args": [
+            "boolean",
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "SendObjectRestock": {
+        "args": [
+            "boolean",
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "SendObjectTrap": {
+        "args": [
+            "boolean",
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "SendObjectScale": {
+        "args": [
+            "boolean",
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "SendObjectSound": {
+        "args": [
+            "boolean",
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "SendObjectState": {
+        "args": [
+            "boolean",
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "SendObjectMove": {
+        "args": [
+            "boolean",
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "SendObjectRotate": {
+        "args": [
+            "boolean",
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "SendDoorState": {
+        "args": [
+            "boolean",
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "SendDoorDestination": {
+        "args": [
+            "boolean",
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "SendContainer": {
+        "args": [
+            "boolean",
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "SendVideoPlay": {
+        "args": [
+            "boolean",
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "SendClientScriptLocal": {
+        "args": [
+            "boolean",
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "SendConsoleCommand": {
+        "args": [
+            "boolean",
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "ReadLastObjectList": {
+        "args": [],
+        "return": "nil"
+    },
+    "ReadLastEvent": {
+        "args": [],
+        "return": "nil"
+    },
+    "InitializeObjectList": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "InitializeEvent": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "CopyLastObjectListToStore": {
+        "args": [],
+        "return": "nil"
+    },
+    "GetObjectChangesSize": {
+        "args": [],
+        "return": "number"
+    },
+    "GetEventAction": {
+        "args": [],
+        "return": "number"
+    },
+    "GetEventContainerSubAction": {
+        "args": [],
+        "return": "number"
+    },
+    "GetObjectRefNumIndex": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetObjectSummonerRefNumIndex": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "SetEventCell": {
+        "args": [
+            "string"
+        ],
+        "return": "nil"
+    },
+    "SetEventAction": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetEventConsoleCommand": {
+        "args": [
+            "string"
+        ],
+        "return": "nil"
+    },
+    "SetObjectRefNumIndex": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "AddWorldObject": {
+        "args": [],
+        "return": "nil"
+    },
+    "ReadReceivedWorldstate": {
+        "args": [],
+        "return": "nil"
+    },
+    "CopyReceivedWorldstateToStore": {
+        "args": [],
+        "return": "nil"
+    },
+    "ClearKillChanges": {
+        "args": [],
+        "return": "nil"
+    },
+    "ClearMapChanges": {
+        "args": [],
+        "return": "nil"
+    },
+    "ClearClientGlobals": {
+        "args": [],
+        "return": "nil"
+    },
+    "GetKillChangesSize": {
+        "args": [],
+        "return": "number"
+    },
+    "GetMapChangesSize": {
+        "args": [],
+        "return": "number"
+    },
+    "GetClientGlobalsSize": {
+        "args": [],
+        "return": "number"
+    },
+    "GetKillRefId": {
+        "args": [
+            "number"
+        ],
+        "return": "string"
+    },
+    "GetKillNumber": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetWeatherRegion": {
+        "args": [],
+        "return": "string"
+    },
+    "GetWeatherCurrent": {
+        "args": [],
+        "return": "number"
+    },
+    "GetWeatherNext": {
+        "args": [],
+        "return": "number"
+    },
+    "GetWeatherQueued": {
+        "args": [],
+        "return": "number"
+    },
+    "GetWeatherTransitionFactor": {
+        "args": [],
+        "return": "number"
+    },
+    "GetMapTileCellX": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetMapTileCellY": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetClientGlobalId": {
+        "args": [
+            "number"
+        ],
+        "return": "string"
+    },
+    "GetClientGlobalVariableType": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetClientGlobalIntValue": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "GetClientGlobalFloatValue": {
+        "args": [
+            "number"
+        ],
+        "return": "number"
+    },
+    "SetAuthorityRegion": {
+        "args": [
+            "string"
+        ],
+        "return": "nil"
+    },
+    "SetWeatherRegion": {
+        "args": [
+            "string"
+        ],
+        "return": "nil"
+    },
+    "SetWeatherForceState": {
+        "args": [
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "SetWeatherCurrent": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetWeatherNext": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetWeatherQueued": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetWeatherTransitionFactor": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetHour": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetDay": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetMonth": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetYear": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetDaysPassed": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetTimeScale": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "SetPlayerCollisionState": {
+        "args": [
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "SetActorCollisionState": {
+        "args": [
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "SetPlacedObjectCollisionState": {
+        "args": [
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "UseActorCollisionForPlacedObjects": {
+        "args": [
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "AddKill": {
+        "args": [
+            "string",
+            "number"
+        ],
+        "return": "nil"
+    },
+    "AddClientGlobalInteger": {
+        "args": [
+            "string",
+            "number",
+            "number"
+        ],
+        "return": "nil"
+    },
+    "AddClientGlobalFloat": {
+        "args": [
+            "string",
+            "number"
+        ],
+        "return": "nil"
+    },
+    "AddSynchronizedClientScriptId": {
+        "args": [
+            "string"
+        ],
+        "return": "nil"
+    },
+    "AddSynchronizedClientGlobalId": {
+        "args": [
+            "string"
+        ],
+        "return": "nil"
+    },
+    "AddEnforcedCollisionRefId": {
+        "args": [
+            "string"
+        ],
+        "return": "nil"
+    },
+    "AddCellToReset": {
+        "args": [
+            "string"
+        ],
+        "return": "nil"
+    },
+    "AddDestinationOverride": {
+        "args": [
+            "string",
+            "string"
+        ],
+        "return": "nil"
+    },
+    "ClearSynchronizedClientScriptIds": {
+        "args": [],
+        "return": "nil"
+    },
+    "ClearSynchronizedClientGlobalIds": {
+        "args": [],
+        "return": "nil"
+    },
+    "ClearEnforcedCollisionRefIds": {
+        "args": [],
+        "return": "nil"
+    },
+    "ClearCellsToReset": {
+        "args": [],
+        "return": "nil"
+    },
+    "ClearDestinationOverrides": {
+        "args": [],
+        "return": "nil"
+    },
+    "SaveMapTileImageFile": {
+        "args": [
+            "number",
+            "string"
+        ],
+        "return": "nil"
+    },
+    "LoadMapTileImageFile": {
+        "args": [
+            "number",
+            "number",
+            "string"
+        ],
+        "return": "nil"
+    },
+    "SendClientScriptGlobal": {
+        "args": [
+            "number",
+            "boolean",
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "SendClientScriptSettings": {
+        "args": [
+            "number",
+            "boolean",
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "SendWorldKillCount": {
+        "args": [
+            "number",
+            "boolean",
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "SendWorldMap": {
+        "args": [
+            "number",
+            "boolean",
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "SendWorldTime": {
+        "args": [
+            "number",
+            "boolean",
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "SendWorldWeather": {
+        "args": [
+            "number",
+            "boolean",
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "SendWorldCollisionOverride": {
+        "args": [
+            "number",
+            "boolean",
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "SendCellReset": {
+        "args": [
+            "number",
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "SendWorldDestinationOverride": {
+        "args": [
+            "number",
+            "boolean",
+            "boolean"
+        ],
+        "return": "nil"
+    },
+    "SendWorldRegionAuthority": {
+        "args": [
+            "number"
+        ],
+        "return": "nil"
+    },
+    "ReadLastWorldstate": {
+        "args": [],
+        "return": "nil"
+    },
+    "CopyLastWorldstateToStore": {
+        "args": [],
+        "return": "nil"
+    }
+}
